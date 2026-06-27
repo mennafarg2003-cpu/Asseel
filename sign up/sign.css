@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tajawal;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-offwhite: #fdfbf8;
+  --color-vanilla: #f1eada;
+  --color-mountain: #aaa396;
+  --color-sand: #cec1a8;
+  --color-tobacco: #b59e7d;
+  --color-mahogany: #584738;
+   --color-primary:#F9F7F2;
+}
+body{
+   
+   background: url(photo\ 2.jpg)  center/cover no-repeat;
+   height: 100vh;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.login{
+backdrop-filter: blur(12px);
+border-radius: 32px;
+
+}
+
+.sign{
+border-radius: 32px;
+color: #fff;
+}
+.sign .title{
+text-align: center;
+color: #fff;
+}
+.sign form input{
+padding: 8px;
+border: none;
+border-radius: 16px;
+background-color: #fff;
+outline: none;
+}
+.sign form input:focus{
+border: 2px solid #222;
+}
+.sign .form a{
+color: #fff;
+}
+.sign .form .btn{
+background: #fff;
+color: #222;
+border: #222;
+font-size: 18px;
+width: 93%;
+margin: 0 auto;
+}
+.sign .icon img{
+width: 20px;
+height: 20px;
+margin-left: 16px;
+}
+.sign .another-way a{
+color: #fdfbf8;
+}

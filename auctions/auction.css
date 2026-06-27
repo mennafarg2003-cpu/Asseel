@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+:root {
+   --color-offwhite:#fdfbf8 ;
+  --color-vanilla: #F1EADA;
+  --color-mountain: #AAA396;
+  --color-sand: #CEC1A8;
+  --color-tobacco: #B59E7D;
+  --color-mahogany: #584738;
+  --color-primary:#F9F7F2;
+}
+body{
+    background: var(--back-ground, #FAF9F6) !important;
+    
+}
+
+main {
+    overflow: visible;
+}
+
+
+/* NAVBAR */
+
+.main-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+width:100%;
+height:75px;
+
+padding:0 80px;
+margin:auto;
+
+position:sticky;
+top:0;
+z-index:1000;
+
+background:#fff;
+border-radius:0 0 20px 20px;
+
+backdrop-filter:blur(8px);
+}
+
+.main-navbar.scrolled{
+height:70px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+
+/* Logo */
+
+.logo{
+font-size:30px;
+font-weight:600;
+mix-blend-mode:multiply;
+}
+
+.logo img{
+height:75px;
+width:100%;
+}
+
+
+/* Links */
+
+.nav-links{
+display:flex;
+gap:40px;
+
+list-style:none;
+
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
+.nav-links a{
+position:relative;
+
+padding:6px 0;
+
+color:#000;
+text-decoration:none;
+
+font:700 18px/33px 'Tajawal',sans-serif;
+
+letter-spacing:.5px;
+
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#000;
+}
+
+.nav-links a::after{
+content:"";
+
+position:absolute;
+left:0;
+bottom:-5px;
+
+width:0;
+height:2px;
+
+background:#000;
+
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a.active{
+color:#775A19;
+}
+
+
+/* Icons */
+
+.navbar-icons{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.navbar-icons .icon{
+font-size:20px;
+
+color:#000;
+
+cursor:pointer;
+
+transition:.2s;
+}
+
+.navbar-icons .icon:hover{
+transform:scale(1.2);
+}
+
+
+
+/*       hero      */
+.hero img{
+width: 100%;
+height: 600px;
+object-fit: cover;
+}
+
+.hero .text{
+bottom: 52px;
+left: 52px;
+color: #fff;
+text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.buttons .btn-dark{
+background: #775A19;
+color: #fff; 
+border: none;
+border-radius: 8px;
+margin-right: 32px; 
+width: 300px;
+}
+.buttons .btn-light{
+background: #fff;
+color: #bdbab8; 
+border: none;
+border-radius: 8px;
+width: 300px;
+}
+
+/*     cards     */
+.cards .text{
+color: #584738;
+}
+
+.content{
+gap: 20px;
+}
+.card{
+max-width: 370px;
+border: none !important;
+outline: none;
+
+}
+.card img{
+width: 370px;
+height: 300px;
+object-fit: cover;
+border: none;
+border-radius: 16px 16px 0 0;
+}
+.card p{
+opacity: 0.7;
+}
+.card .btn {
+background: #775A19;
+color: #fff;
+width: 90%;
+}
+.card a{
+color: #000;
+width: 95%;
+text-align: center;
+}
+
+
+
+/*                           card                        */
+
+
+/*    photo     */
+.details .photo img{
+width: 1200px;
+height: 550px;
+object-fit: cover;
+border-radius: 32px;
+margin-bottom: 32px;
+}
+
+
+/*     main  information    */
+
+.details .main-info{
+max-width: 1300px;
+margin: auto;
+gap: 50px;
+width: 100%;
+justify-content: center;
+margin-right: 8px;
+}
+
+.details .main-info .location img{
+width: 330px;
+height: 200px;
+object-fit: cover;
+border-radius: 16px;
+}
+.location h4{
+color: #584738;
+text-align: left ;
+}
+.location .btn{
+background: #584738;
+color: #fff;
+border-radius: 32px;
+width: 95%;
+}
+.location .note{
+background: #f2edeb;
+border-radius: 16px;
+width: 330px;
+}
+.location .note h6{
+color: #775A19;
+}
+.location .note p{
+opacity: 0.7;
+line-height: 22px;
+}
+.location .file{
+background: #584738;
+color: #fff;
+border-radius: 64px;
+cursor: pointer;
+padding: 12px;
+height: 80px;
+width: 95%;
+}
+.location .file h4{
+color: #fff;
+}
+.location .file p{
+opacity: 0.7;
+}
+
+
+/*   horse-info   */
+.details main{
+    width: 100%;
+}
+.horse-title{
+color:#5a4830;
+font-weight:700;
+}
+
+.card-info{
+width: 70%;
+background: #fff;
+}
+.card-auc{
+width: 70%;
+background: #777;
+}
+.badge-horse{
+background:#f3e3bb;
+color:#8a6b2d;
+}
+
+.opening{
+width: 70% ;
+}
+.price{
+font-weight:800;
+color:#5a4830;
+}
+
+.btn-bid{
+background:#5a4830 !important;
+color:white !important;
+
+}
+
+.btn-bid:hover{
+background:#463623;
+color:white;
+}
+
+
+
+
+
+
+
+/*   footer    */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 16px;
+  margin-top: 32px;
+  background-color: var(--color-primary);
+}
+footer .footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .footer-logo img{
+  width: 120px;
+  height: 85px;
+  mix-blend-mode: multiply;
+}
+footer .footer-logo p{
+  font-size: 14px;
+  text-align: justify;
+  max-width: 350px;
+  margin-left: 25px;
+}
+
+
+footer .footer-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 8px;
+}
+
+footer .footer-text .icon{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  color: #9d9999;
+}
+footer .inf-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-text h3{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+footer .subscribe{
+  display: flex;
+  gap: 10px;
+}
+footer .footer-text input{
+  border-radius: 16px;
+  border: none;
+  background:#ebe7e7;
+  padding:8px;
+  width: 300px;
+}
+footer .footer-text input:focus{
+  outline: none;
+  background: #fff ; 
+  border-color: var(--color-mahogany); 
+  box-shadow: 0 0 5px var(--color-mahogany);
+}
+footer .footer-text button{
+  background-color: var(--color-mahogany);
+  color: #fff;
+  padding: 8px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ===== HAMBURGER MENU ===== */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* ===== TABLET: max-width 1024px ===== */
+@media (max-width: 1024px) {
+    .main-navbar {
+        padding: 0 30px;
+    }
+
+  
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        transform: translateY(-160%);
+        transition: transform 0.4s ease;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: block; 
+        order: 2;
+    }
+    
+    .navbar-icons {
+        order: 3;
+    }
+
+    .auction-details .container, 
+    .main-auction-section .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px;
+    }
+
+    .auction-gallery, 
+    .auction-bidding-card,
+    .horse-info-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    /* -- PHOTO -- */
+  .details .photo img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px;
+  }
+
+  /* -- MAIN INFO -- */
+  .details .main-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  /* -- LOCATION -- */
+  .details .main-info .location {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .details .main-info .location img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .location .note {
+    width: 100%;
+  }
+
+  .location .file {
+    width: 100%;
+    height: auto;
+  }
+
+  .location .btn {
+    width: 100%;
+  }
+
+  /* -- HORSE INFO -- */
+  .details main {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .card-info,
+  .card-auc,
+  .opening {
+    width: 100%;
+  }
+
+}
+
+/* ===== MOBILE: max-width 768px ===== */
+@media (max-width: 768px) {
+    .main-navbar {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 55px;
+    }
+
+    /* عناوين أقسام المزادات */
+    .title-auction h1 {
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    
+    .auction-card {
+        width: 100% !important;
+        margin: 15px auto !important;
+    }
+
+    .auction-info-box h2 {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .container, .main-container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden;
+    }
+
+   
+    .horse-specs-grid {
+        grid-template-columns: 1fr !important; 
+        gap: 15px;
+    }
+
+    .bidding-box {
+        padding: 15px !important;
+        width: 100% !important;
+    }
+
+    .bidding-box .price-tag {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    
+    .bidding-status {
+        flex-direction: column !important;
+        gap: 15px;
+        text-align: center;
+    }
+
+
+    /* -- PHOTO -- */
+  .details .photo img {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* -- MAIN INFO -- */
+  .details .main-info {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 0 12px;
+    margin-right: 0;
+  }
+
+  /* -- LOCATION -- */
+  .details .main-info .location {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .details .main-info .location img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .location h4 {
+    font-size: 16px;
+  }
+
+  .location .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .location .note {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .location .note p {
+    font-size: 13px;
+  }
+
+  .location .file {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .location .file h4 {
+    font-size: 14px;
+  }
+
+  .location .file p {
+    font-size: 12px;
+  }
+
+  /* -- HORSE INFO -- */
+  .details main {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .horse-title {
+    font-size: 24px;
+  }
+
+  .badge-horse {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .details main > p.text-muted {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .card-info,
+  .card-auc {
+    width: 100%;
+    padding: 16px !important;
+  }
+
+  .card-info h5,
+  .card-auc h5 {
+    font-size: 16px;
+    margin-bottom: 12px !important;
+  }
+
+  /* bootstrap grid fix on small screens */
+  .card-info .col-md-6,
+  .card-auc .col-6 {
+    font-size: 13px;
+  }
+
+  /* -- OPENING / BID -- */
+  .opening {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .opening .price {
+    font-size: 22px;
+  }
+
+  .btn-bid {
+    width: 100%;
+    padding: 12px !important;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+    /* (Footer) */
+    footer {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+        padding: 30px 15px !important;
+    }
+    footer .footer-logo {
+        align-items: center !important;
+    }
+    footer .footer-logo p {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    footer .subscribe {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    footer .footer-text input {
+        width: 100% !important;
+    }
+}
