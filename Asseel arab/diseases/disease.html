@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأمراض</title>
+    <link rel="stylesheet" href="disease.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+</head>
+<body>
+
+    <main>
+      <!--   nav     -->
+      <nav class="main-navbar">
+        <div class="logo">
+          <img src="../images/logo 31.jpeg" alt="logo">
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="navbar-icons">
+          <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+          <i class="fas fa-shopping-cart icon cart"></i>
+          <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="../Breeds/Breeds.html">السلالات</a></li>
+          <li><a href="../articles/articles.html">المقالات</a></li>
+          <li><a href="../diseases/disease.html" class="active">الأمراض</a></li>
+          <li><a href="../vets/vets.html">الأطباء</a></li>
+          <li><a href="../store/store.html">المتجر</a></li>
+          <li><a href="../auctions/auction.html">المزادات</a></li>
+          <li><a href="../community/community.html">المجتمع</a></li>
+        </ul>
+      </nav>
+
+      <!-- hero   -->
+      <section class="hero">
+        <img src="img/hero.jpg" alt="Hero" />
+        <div class="text">
+          <h1>موسوعة أمراض الخيول</h1>
+          <p>دليل شامل للتعرف على أمراض الخيول وأعراضها وطرق علاجها.</p>
+        </div>
+      </section>
+
+      <!--   disease card   -->
+      <section class="disease py-5">
+        <div class="container">
+          <div class="row g-4"> <!-- استخدام g-4 لمسافات متناسقة تمنع الـ Scroll الجانبي -->
+         
+            <!-- card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/ears.webp" alt="Ears">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض الأذن</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">يمكن أن تنتج أمراض الأذن عن عدوى أو طفيليات مثل العُثّ. قد تهزّ الخيول رأسها أو تُظهر انزعاجاً عند اللمس. التنظيف والرعاية البيطرية مهمان لتفادي المضاعفات.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="ear-diseases.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/leg.webp" alt="Leg">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض الأطراف</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">أمراض الأطراف شائعة جداً بسبب الحركة المستمرة والضغط. تشمل إصابات الأوتار والكسور ومشاكل المفاصل. قد تُظهر الخيول عرجاً أو تورماً أو ألماً أثناء المشي.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="/diseases/Horse legs.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/Horse skin.jpg" alt="Skin">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض الجلد</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">تنتج أمراض الجلد غالباً عن طفيليات أو فطريات أو حساسية. تشمل العلامات الحكة وتساقط الشعر والاحمرار أو الجروح.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/head.jpg" alt="Head">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض الرأس</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">قد تؤثر أمراض الرأس على الدماغ أو الأعصاب أو الجيوب الأنفية. الأعراض قد تشمل إمالة الرأس وضعف التوازن أو السلوك غير المعتاد.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/eyes.webp" alt="Eyes">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض العيون</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">يمكن أن تؤثر أمراض العيون على الرؤية وتتفاقم بسرعة. تشمل الأعراض الاحمرار والدموع أو الحساسية للضوء.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/nose.png" alt="Nose">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض الأنف</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">تشمل أمراض الأنف عادةً التهابات الجهاز التنفسي أو الحساسية. قد تُعاني الخيول من إفرازات أنفية أو سعال أو صعوبة في التنفس.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- card 7 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/Tumors.webp" alt="Tumors">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">الأورام</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">يمكن أن تكون الأورام حميدة أو خبيثة. قد تظهر كتكتلات على الجلد أو داخل الجسم. الكشف المبكر يساعد في إدارة الحالة بفعالية.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/stomach.jpg" alt="Stomach">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض المعدة</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">تشمل أمراض المعدة المغص، وهو من أكثر المشكلات شيوعاً في الخيول. الأعراض تشمل الألم والأرق وفقدان الشهية. التغذية السليمة والرعاية ضروريتان للوقاية.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 9 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="disease-card h-100 d-flex flex-column">
+                <img src="img/Joints.webp" alt="Joints">
+                <div class="card-body p-3 d-flex flex-column flex-grow-1">
+                  <h3 class="fs-4 fw-semibold mt-2">أمراض المفاصل</h3>
+                  <p class="fs-6 fw-medium text-muted flex-grow-1">تؤثر أمراض المفاصل على الحركة والمرونة. تشمل التهاب المفاصل والالتهابات. قد تُظهر الخيول تيبساً أو صعوبة في الحركة. التمرين المنتظم والرعاية يمكن أن يحسّنا صحة المفاصل.</p>
+                  <div class="line mt-auto pt-3">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--     encyclopedia     -->
+      <section class="encyclopedia-horse px-3 mb-5">
+        <div class="container">
+          <div class="encyclopedia p-5 d-flex align-items-center justify-content-center flex-column rounded-4">
+             <h3 class="fs-3 fw-semibold text-center">استشر خبيراً متخصصاً</h3>
+             <p class="fs-6 fw-light mt-3 text-center">احصل على إرشادات بيطرية متخصصة مصممة خصيصاً للحفاظ على تراث الخيول.</p>
+             <button class="btn p-3 text-center mt-2">تواصل مع خبير</button>
+          </div>
+        </div>
+      </section> 
+
+      <!--   footer   -->
+      <footer>
+        <div class="footer-logo">
+          <img src="../images/logo 3.jpeg" alt="Logo">
+          <p>أصيل وجهتك المثلى لعالم الخيول. من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+        <div class="footer-text">
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="inf-footer">
+            <h3>موسوعة الخيول العالمية</h3>
+            <div class="subscribe">
+              <input type="email" placeholder="بريدك الإلكتروني">
+              <button>اشترك</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    
+    <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../diseases/disease.html";
+        }
+    </script>
+</body>
+</html>

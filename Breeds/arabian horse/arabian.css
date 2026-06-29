@@ -159,8 +159,8 @@ transform:scale(1.2);
 }
 .hero .text{
  position: absolute;
- Top:550px;
- Left:152px;
+ bottom:55px;
+ Left:55px;
  color: #fff;
 }
 .hero .text h1{

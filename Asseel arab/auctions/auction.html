@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزادات</title>
+    <link
+      rel="stylesheet"
+      href="auction.css" />
+
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap.min.css.map" />
+</head>
+<body>
+
+   <main> 
+
+    <!--   nav     -->
+    <nav class="main-navbar">
+          <div class="logo">
+        <img src="../images/logo 31.jpeg" alt="logo">
+    </div>
+
+     <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+   <div class="navbar-icons">
+    <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+    <i class="fas fa-shopping-cart icon cart"></i>
+   <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+</div>
+  
+
+    <ul class="nav-links">
+      <li><a href="../index.html" >الرئيسية</a></li>
+        <li><a href="../Breeds/Breeds.html" >السلالات</a></li>
+        <li><a href="../articles/articles.html" >المقالات</a></li>
+        <li><a href="../diseases/disease.html" >الأمراض</a></li>
+        <li><a href="../vets/vets.html" >الأطباء</a></li>
+        <li><a href="../store/store.html" >المتجر</a></li>
+        <li><a href="../auctions/auction.html" class="active">المزادات</a></li>
+        <li><a href="../community/community.html" >المجتمع</a></li>
+        
+    </ul>
+    </nav>
+
+
+
+    <!--     hero     -->
+         <section class="hero p-2 m-3 position-relative">
+          <img src="images/Dubai World Cup.jpg" alt="">
+
+          <div class="text position-absolute">
+          <h1 class="fs-2 fw-semibold mb-3">استكشف مزادات الخيول النشطة</h1>
+          <p class="fs-6 fw-light mb-3">اكتشف خيولاً عربية أصيلة من مزادات دولية موثوقة ومراكز تربية متميزة.</p>
+          <div class="buttons p-2 m-2">
+            <button class="btn-dark p-2 mb-3 fs-6 fw-medium">استكشف المزادات الآن <i class="fa-solid fa-arrow-left"></i></button>
+            <button class="btn-light p-2 fs-6 fw-medium">اعرف المزيد</button>
+          </div>
+          </div>
+         </section>
+
+
+
+    <!--     cards       -->
+         <section class="cards p-2 m-3">
+
+          <div class="text p-4 mt-3">
+            <p class="fs-6 fw-medium">اختيارات مميزة</p>
+            <h2 class="fs-3 fw-semibold">المزادات النشطة حالياً</h2>
+          </div>
+
+          <div class="content p-4 d-flex justify-content-evenly flex-wrap mb-3">
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card1.webp" alt="">
+              <h3 class="fs-4 fw-semibold my-3">بارق المجد</h3>
+              <p class="fs-6 fw-light">سلالة حمداني | ٥ سنوات | حصان</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> مركز الخالدية للخيول - تبوك</p>
+              <a href="card 1.html" class="text-decoration-none" ><button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button></a>
+            </div>
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card2.jpg" alt="">
+              <h3 class="fs-4 fw-semibold my-3">صقر الصحراء</h3>
+              <p class="fs-6 fw-light">سلالة كحيلان | ٤ سنوات | حصان</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> مركز الرياض للخيول - الرياض</p>
+              <button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button>
+            </div>
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card3.jpg" alt="">
+              <h3 class="fs-4 fw-semibold my-3">صقر الجزيرة</h3>
+              <p class="fs-6 fw-light">سلالة عبيان | ٦ سنوات | فرس</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> مزاد دبي السنوي - دبي</p>
+              <button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button>
+            </div>
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card4.jpg" alt="">
+              <h3 class="fs-4 fw-semibold my-3">بدر الزمان</h3>
+              <p class="fs-6 fw-light">سلالة معنقي | ٣ سنوات | مهر</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> مزاد كتارا الدولي - الدوحة</p>
+              <button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button>
+            </div>
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card5.webp" alt="">
+              <h3 class="fs-4 fw-semibold my-3">رعد الشمال</h3>
+              <p class="fs-6 fw-light">سلالة شويمان | ٧ سنوات | حصان</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> بيت العرب - الكويت</p>
+              <button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button>
+            </div>
+
+            <div class="card  d-flex justify-content-center align-items-center">
+              <img src="images/card6.webp" alt="">
+              <h3 class="fs-4 fw-semibold my-3">لؤلؤة الخليج</h3>
+              <p class="fs-6 fw-light">سلالة صقلاوي | ٣ سنوات | مهرة</p>
+              <p class="fs-6 fw-light"> <i class="fa-solid fa-location-dot" style="color: #775A19;"></i> مزاد الشارقة الدولي - الشارقة</p>
+              <button class="btn p-2 my-2 fs-6 fw-medium">عرض التفاصيل</button>
+            </div>
+
+          </div>
+         </section>
+
+
+
+
+
+      <!--   footer    -->
+    <footer>
+
+        <div class="footer-logo">
+        <img src="../images/logo 31.jpeg" alt="">
+        <p>أصيل وجهتك المثلى لعالم الخيول.
+             من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة
+             والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+
+         <div class="footer-text">
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          
+            <div class="inf-footer">
+              <h3>موسوعة الخيول العالمية</h3>
+
+             <div class="subscribe">
+               <input type="email" placeholder="بريدك الإلكتروني">
+               <button>اشترك</button>
+             </div>
+
+           </div>
+        </div>
+    </footer>
+
+    </main>
+    
+      <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../auctions/auction.html";
+        }
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المزاد</title>
+    <link
+      rel="stylesheet"
+      href="auction.css" />
+
+   <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap.min.css.map" />
+</head>
+<body>
+
+      <!--   nav     -->
+      <nav class="main-navbar">
+          <div class="logo">
+        <img src="../images/logo 31.jpeg" alt="logo">
+    </div>
+
+     <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+   <div class="navbar-icons">
+    <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+    <i class="fas fa-shopping-cart icon cart"></i>
+   <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+</div>
+  
+
+    <ul class="nav-links">
+      <li><a href="../index.html" >الرئيسية</a></li>
+        <li><a href="../Breeds/Breeds.html" >السلالات</a></li>
+        <li><a href="../articles/articles.html" >المقالات</a></li>
+        <li><a href="../diseases/disease.html" >الأمراض</a></li>
+        <li><a href="../vets/vets.html" >الأطباء</a></li>
+        <li><a href="../store/store.html" >المتجر</a></li>
+        <li><a href="../auctions/auction.html" class="active">المزادات</a></li>
+        <li><a href="../community/community.html" >المجتمع</a></li>
+        
+    </ul>
+    </nav>
+
+   <main> 
+
+  
+
+
+    <!--    details   -->
+    <section class="details p-2  d-flex flex-column justify-content-center">
+
+      
+     <!--   photo   -->
+     <div class="photo d-flex justify-content-center">
+      <img src="images/card1.webp" alt="">
+     </div>
+
+
+
+     <!--    main information     -->
+      <div class="main-info p-1 d-flex justify-content-center">
+
+        <!-- location -->
+        <div class="location mt-4 d-flex flex-column align-items-center">
+          <h4 class="fs-5 fw-bold mb-3">موقع المزاد</h4>
+          <img src="images/Map.png" alt="">
+          <button class="btn mt-3 p-2">افتح الاتجاهات</button>
+
+          <div class="note mt-3 p-2">
+            <h6 class="fw-bold fs-6">ملاحظة مهمة</h6>
+            <p class="fs-6 fw-light">يُرجى الحضور قبل ٣٠ دقيقة من بدء المزاد لاستكمال التسجيل واستلام رقم المزايدة.</p>
+          </div>
+
+          <div class="file mt-3">
+            <h4 class="fs-6 fw-bold">السجل الطبي الكامل</h4>
+            <p class="fs-6 fw-light">تحميل الشهادة الطبية (PDF)</p>
+          </div>
+
+        </div>
+
+        <!-- horse info -->
+         <main class="container p-2">
+
+    <!-- Header -->
+    <span class="badge badge-horse">
+        خيل النخبة #77218
+    </span>
+
+    <h1 class="horse-title mt-3">
+        بارق المجد
+    </h1>
+
+    <p class="text-muted mb-5">
+        من أندر سلالات الخيل العربي الأصيل،
+        يتميز بقوام رائع وحركة أنيقة
+        وذكاء عالٍ.
+    </p>
+
+
+    <!-- Horse Details -->
+    <div class="card-info rounded-4 p-4 mb-4 mt-3 border-0 shadow-sm">
+
+        <h5 class="mb-4">
+            معلومات تفاصيل الخيل
+        </h5>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <small class="text-muted">النسب</small>
+                <p class="fw-semibold mb-0">
+                    عربي أصيل – حمداني
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <small class="text-muted">العمر</small>
+                <p class="fw-semibold mb-0">
+                    ٥ سنوات و٣ أشهر
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <small class="text-muted">
+                    مستوى التدريب
+                </small>
+
+                <p class="fw-semibold mb-0">
+                    متقدم – قفز الحواجز
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <small class="text-muted">
+                    الحالة الصحية
+                </small>
+
+                <p class="fw-semibold mb-0">
+                    ممتازة
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Auction Info -->
+    <div class="card-auc rounded-4 p-4 bg-light border-0 mb-4">
+
+        <h5 class="mb-4">
+            معلومات المزاد
+        </h5>
+
+        <div class="row gy-3">
+
+            <div class="col-6 text-muted">
+                اسم المزاد
+            </div>
+
+            <div class="col-6 fw-semibold">
+                مركز الإمارات للخيول العربية
+            </div>
+
+
+            <div class="col-6 text-muted">
+                التاريخ والوقت
+            </div>
+
+            <div class="col-6 fw-semibold">
+                ١٥ ديسمبر ٢٠٢٤
+            </div>
+
+
+            <div class="col-6 text-muted">
+                العنوان
+            </div>
+
+            <div class="col-6 fw-semibold">
+                أبوظبي، الإمارات
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="opening d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <small class="text-muted">
+                سعر الافتتاح
+            </small>
+
+            <h3 class="price mb-0">
+                2,550,000 EGP
+            </h3>
+
+        </div>
+
+        <button class="btn btn-bid p-2 rounded-pill">
+            سجّل في المزاد
+        </button>
+
+    </div>
+
+</main>
+
+
+     </section> 
+
+
+
+          <!--   footer    -->
+    <footer>
+
+        <div class="footer-logo">
+        <img src="../images/logo 31.jpeg" alt="">
+        <p>أصيل وجهتك المثلى لعالم الخيول.
+             من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة
+             والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+
+         <div class="footer-text">
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          
+            <div class="inf-footer">
+              <h3>موسوعة الخيول العالمية</h3>
+
+             <div class="subscribe">
+               <input type="email" placeholder="بريدك الإلكتروني">
+               <button>اشترك</button>
+             </div>
+
+           </div>
+        </div>
+    </footer>
+
+    </main>
+    
+     <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../auctions/card 1.html";
+        }
+    </script>
+  
+</body>
+</html>

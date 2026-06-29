@@ -1,0 +1,250 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السلالات</title>
+    <link rel="stylesheet" href="Breeds.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main id="breeds">
+
+      <!-- nav  -->
+      <nav class="main-navbar">
+        <div class="logo">
+            <img src="../images/logo 31.jpeg" alt="logo">
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+        <div class="navbar-icons">
+            <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+            <i class="fas fa-shopping-cart icon cart"></i>
+            <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+        </div>
+  
+        <ul class="nav-links">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../Breeds/Breeds.html" class="active">السلالات</a></li>
+            <li><a href="../articles/articles.html">المقالات</a></li>
+            <li><a href="../diseases/disease.html">الأمراض</a></li>
+            <li><a href="../vets/vets.html">الأطباء</a></li>
+            <li><a href="../store/store.html">المتجر</a></li>
+            <li><a href="../auctions/auction.html">المزادات</a></li>
+            <li><a href="../community/community.html">المجتمع</a></li>
+        </ul>
+      </nav>
+
+
+      <!--     hero    -->
+
+      <section class="hero position-relative overflow-hidden w-100">
+        <img src="Breeds/hero 2.jpeg " alt="Hero Background" class="w-100 h-100 object-fit-cover" />
+        <div class="text text-center text-md-end px-3 px-md-5">
+          <h1 class="fw-bold">موسوعة سلالات الخيول العالمية</h1>
+          <p class="lead">
+            استكشف تاريخ وخصائص سلالات الخيول المذهلة من شتى أنحاء العالم،
+            من سهول الأندلس إلى صحاري شبه الجزيرة العربية
+          </p>
+        </div>
+      </section>
+
+
+      <!--     cards     -->
+
+      <section class="cards container my-5">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/arabian-horse-2.jpg" alt="الخيل العربي" class="img-fluid">
+                <span class="country rounded-pill position-absolute">شبه الجزيرة العربية</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">الخيل العربي</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">تدين كثير من السلالات الحديثة بجزء من جيناتها للخيل العربي. الخيل العربي الجميل والأصيل هو أحد أعرق الأصول التي انبثقت منها سلالات الخيول في العالم.</p>
+                <div class="line mt-auto p-2 border-top">
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/thoroughbred-horse.webp" alt="الخيل الإنجليزي الأصيل" class="img-fluid">
+                <span class="country rounded-pill position-absolute">إنجلترا</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">الخيل الإنجليزي الأصيل</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">قلّة من السلالات سافرت بقدر ما سافر الخيل الإنجليزي الأصيل على امتداد العالم.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/Thoroughbred.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/american-quarter-horse-2.webp" alt="خيل الكوارتر الأمريكي" class="img-fluid">
+                <span class="country rounded-pill position-absolute">الولايات المتحدة</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل الكوارتر الأمريكي</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعدّ خيل الكوارتر رمزاً للفروسية الأمريكية وارتبط بأسطورة رعاة البقر في الغرب الأمريكي.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/American Quarter Horse.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/Akhal-Teke-Horse.webp" alt="خيل أخال تيكه" class="img-fluid">
+                <span class="country rounded-pill position-absolute">تركمانستان</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل أخال تيكه</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعرف بمظهره الرشيق وبريق معطفه المعدني اللامع، وهو خيل صُمّم للسرعة.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/american-mustang-horse.webp" alt="الخيل المسطنق الأمريكي" class="img-fluid">
+                <span class="country rounded-pill position-absolute">الولايات المتحدة</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">الخيل المسطنق الأمريكي</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُقال إن المسطنق الأمريكي يرمز إلى حرية الغرب الأمريكي البري، والكلمة مشتقة من الإسبانية «mestena».</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/american-paint-horse.jpg" alt="خيل الأمريكي المطلي" class="img-fluid">
+                <span class="country rounded-pill position-absolute">الولايات المتحدة</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل الأمريكي المطلي</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">خيل الأداء ذو الألوان الفريدة، يُربَّى لنمطه البقعي المميز. يُسمح فقط بسلالات الإنجليزي الأصيل أو الكوارتر.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/andalusian-horse.webp" alt="الخيل الأندلسي" class="img-fluid">
+                <span class="country rounded-pill position-absolute">إسبانيا</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">الخيل الأندلسي</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُضاهي الأندلسي الخيلَ العربي في نقاء السلالة وعراقتها، وهو من أجداد سلالات الخيول الحديثة.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/appaloosa-horse.webp" alt="خيل الأبالوزا" class="img-fluid">
+                <span class="country rounded-pill position-absolute">الولايات المتحدة</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل الأبالوزا</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعرف بأنماطه البقعية اللافتة، والأبالوزا سلالة لونية مصنّفة وفق علم الوراثة اللونية.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/clydesdale-horse.webp" alt="خيل كلايدسديل" class="img-fluid">
+                <span class="country rounded-pill position-absolute">اسكتلندا</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل كلايدسديل</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعدّ فخر اسكتلندا، وهو سلالة جر ثقيلة أصيلة من مقاطعة لانركشير باسكتلندا.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/friesian-horse.jpg" alt="خيل الفريزيان" class="img-fluid">
+                <span class="country rounded-pill position-absolute">هولندا</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل الفريزيان</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعرف أيضاً بـ Friese paard، يتميز الفريزيان بمظهره الأنيق وحركته الرشيقة. مثالي للعروض والميادين.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/Lipizzaner-horse.jpg" alt="خيل الليبيزانر" class="img-fluid">
+                <span class="country rounded-pill position-absolute">النمسا</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل الليبيزانر</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">يُعرف الليبيزانر بفحوله المؤدية الرائعة من مدرسة الفروسية الإسبانية في فيينا.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card-horse position-relative d-flex flex-column w-100">
+                <img src="Breeds/Morgan-Horse.jpg" alt="خيل المورغان" class="img-fluid">
+                <span class="country rounded-pill position-absolute">الولايات المتحدة</span>
+                <h3 class="mt-3 px-2 fs-4 fw-semibold">خيل المورغان</h3>
+                <p class="px-2 fs-6 fw-medium flex-grow-1">أول سلالة أمريكية موثّقة، يعود نسب خيل المورغان إلى الفحل الأصلي Figure ومالكه جاستن مورغان.</p>
+                <div class="line mt-auto p-2 border-top">   
+                    <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1" href="arabian horse/arabian.html" target="_blank">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    
+       <footer>
+
+        <div class="footer-logo">
+        <img src="../images/logo 3.jpeg" alt="">
+        <p>أصيل وجهتك المثلى لعالم الخيول.
+             من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة
+             والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+
+         <div class="footer-text">
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          
+            <div class="inf-footer">
+              <h3>موسوعة الخيول العالمية</h3>
+
+             <div class="subscribe">
+               <input type="email" placeholder="بريدك الإلكتروني">
+               <button>اشترك</button>
+             </div>
+
+           </div>
+        </div>
+    </footer>
+
+    </main>
+    
+      <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../Breeds/Breeds.html";
+        }
+    </script>
+  </body>
+</html>

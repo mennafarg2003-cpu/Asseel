@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+function changeLanguage(){
+
+let page =
+window.location.pathname
+.split("/")
+.pop();
+
+window.location.href=
+`arabic/${page}`;
+
+}

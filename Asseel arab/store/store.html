@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر</title>
+    <link rel="stylesheet" href="store.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+</head>
+<body>
+
+   <main> 
+    <!--   nav     -->
+    <nav class="main-navbar">
+        <div class="logo">
+            <img src="../images/logo 31.jpeg" alt="logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbar-icons">
+            <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+            <i class="fas fa-shopping-cart icon cart"></i>
+            <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../Breeds/Breeds.html">السلالات</a></li>
+            <li><a href="../articles/articles.html">المقالات</a></li>
+            <li><a href="../diseases/disease.html">الأمراض</a></li>
+            <li><a href="../vets/vets.html">الأطباء</a></li>
+            <li><a href="../store/store.html" class="active">المتجر</a></li>
+            <li><a href="../auctions/auction.html">المزادات</a></li>
+            <li><a href="../community/community.html">المجتمع</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero   -->
+    <section class="hero">
+        <img src="img/hero 2.jpg" alt="Hero Background" />
+        <div class="text">
+            <h1>أصالة الفروسية.</h1>
+            <p>نجمع بين قرون من تقاليد الفروسية والفخامة الحديثة لنقدم لك ولخيلك التجربة المثلى.</p>
+            <button class="btn fs-6 fw-semibold">تسوّق الآن <i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+    </section> 
+
+    <!-- items (تم تحويل التوزيع هنا إلى نظام صف مرن) -->
+    <section class="show-items p-2 m-4">
+        <div class="items-text mb-4">
+            <h3 class="fs-4 fw-semibold">استكشف الفئات</h3>
+            <p class="fs-6 fw-light">كل ما تحتاجه في عالم الفروسية</p>
+        </div>
+
+        <div class="container px-0">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="header text-center">
+                        <div class="img-header p-3 mb-2">
+                            <img src="img/Saddles.jpg" alt="Saddles" class="img-fluid">
+                        </div>
+                        <h4 class="fs-6 fw-semibold">السروج الفاخرة</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="header text-center">
+                        <div class="img-header p-3 mb-2">
+                            <img src="img/Stable Equipment 2..webp" alt="أدوات العناية" class="img-fluid">
+                        </div>
+                        <h4 class="fs-6 fw-semibold">أدوات العناية</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="header text-center">
+                        <div class="img-header p-3 mb-2">
+                            <img src="img/Riders' Apparel 4.webp" alt="Apparel" class="img-fluid">
+                        </div>
+                        <h4 class="fs-6 fw-semibold">ملابس الفروسية</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   products    -->
+    <section class="products p-2 my-3">
+        <div class="container mb-3">
+            <select name="choose" class="choose p-2 fw-light fs-6">
+                <option value="choose" selected>الأكثر شيوعاً</option>
+            </select>
+        </div>
+
+        <!--    cards    -->
+        <div class="container">
+          <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="product.html" class="text-decoration-none">
+                    <div class="card h-100">
+                        <div class="icon-card position-relative">
+                            <img src="img/Saddles 3.jpg" alt="Product">
+                            <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                        <div class="card-text p-3">
+                            <p class="mb-1 fs-6 fw-light">السروج الفاخرة</p>
+                            <h4 class="fs-5 fw-semibold">سرج جلدي</h4>
+                            <div class="all mt-3 d-flex justify-content-between align-items-center">
+                                <div class="price fw-bold fs-6">2,250 EGP</div>
+                                <div class="rate fw-bolder fs-6">★★★★★</div>
+                            </div>
+                        </div>
+                        <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </a>
+            </div>
+             
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="/store/product2.html" class="text-decoration-none">
+                    <div class="card h-100">
+                        <div class="icon-card position-relative">
+                            <img src="img/horse accessories 4.webp" alt="Product">
+                            <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                        <div class="card-text p-3">
+                            <p class="mb-1 fs-6 fw-light">أدوات العناية</p>
+                            <h4 class="fs-5 fw-semibold">ركائب فضية</h4>
+                            <div class="all mt-3 d-flex justify-content-between align-items-center">
+                                <div class="price fw-bold fs-6">1,100 EGP</div>
+                                <div class="rate fw-bolder fs-6">★★★★★</div>
+                            </div>
+                        </div>
+                        <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="icon-card position-relative">
+                        <img src="img/Riders' Apparel 3.webp" alt="Product">
+                        <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="card-text p-3">
+                        <p class="mb-1 fs-6 fw-light">ملابس الفروسية</p>
+                        <h4 class="fs-5 fw-semibold">خوذة الركوب</h4>
+                        <div class="all mt-3 d-flex justify-content-between align-items-center">
+                            <div class="price fw-bold fs-6">550 EGP</div>
+                            <div class="rate fw-bolder fs-6">★★★★★</div>
+                        </div>
+                    </div>
+                    <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="icon-card position-relative">
+                        <img src="img/Riders' Apparel 4.webp" alt="Product">
+                        <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="card-text p-3">
+                        <p class="mb-1 fs-6 fw-light">ملابس الفروسية</p>
+                        <h4 class="fs-5 fw-semibold">سترة الركوب</h4>
+                        <div class="all mt-3 d-flex justify-content-between align-items-center">
+                            <div class="price fw-bold fs-6">1,000 EGP</div>
+                            <div class="rate fw-bolder fs-6">★★★★★</div>
+                        </div>
+                    </div>
+                    <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="icon-card position-relative">
+                        <img src="img/horse accessories Plain Shoe.webp" alt="Product">
+                        <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="card-text p-3">
+                        <p class="mb-1 fs-6 fw-light">أدوات العناية</p>
+                        <h4 class="fs-5 fw-semibold">حدوة الفضة</h4>
+                        <div class="all mt-3 d-flex justify-content-between align-items-center">
+                            <div class="price fw-bold fs-6">700 EGP</div>
+                            <div class="rate fw-bolder fs-6">★★★★★</div>
+                        </div>
+                    </div>
+                    <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="icon-card position-relative">
+                        <img src="img/photo 2.webp" alt="Product">
+                        <span class="p-2 position-absolute"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="card-text p-3">
+                        <p class="mb-1 fs-6 fw-light">أدوات العناية</p>
+                        <h4 class="fs-5 fw-semibold">فرشاة العناية</h4>
+                        <div class="all mt-3 d-flex justify-content-between align-items-center">
+                            <div class="price fw-bold fs-6">300 EGP</div>
+                            <div class="rate fw-bolder fs-6">★★★★★</div>
+                        </div>
+                    </div>
+                    <button class="btn p-2 mx-3 mb-4 mt-auto">أضف للسلة <i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!--   numbers    -->
+    <section class="numbers p-2 mt-2">
+        <div class="num p-2 mx-auto d-flex justify-content-center align-items-center">
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="page">4</span>
+            <span class="page">5</span>
+        </div>
+    </section>
+
+    <!--      banner    -->
+    <section class="banner py-5 px-3">
+        <div class="container">
+            <div class="banner-content p-4 p-md-5 row align-items-center g-4">
+                <div class="col-12 col-md-7 text-center text-md-start">
+                    <div class="banner-text mx-auto mx-md-0">
+                        <h3 class="fs-3 fw-semibold mt-1">الإصدارات الحصرية</h3>
+                        <p class="fs-6 fw-light mt-3 mb-4">اكتشف مجموعة تمزج تراث الماضي بتقنيات المستقبل. متاحة لوقت محدود فقط.</p>
+                        <div class="buttons d-flex justify-content-center justify-content-md-start gap-3">
+                            <button class="btn-light p-3">عرض المجموعة</button>
+                            <button class="btn-dark p-3">طلب مخصص</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 text-center">
+                    <div class="banner-img">
+                        <img src="img/horse accessories.webp" alt="Banner Product" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   footer    -->
+    <footer>
+        <div class="footer-logo">
+            <img src="../images/logo 3.jpeg" alt="Logo">
+            <p>أصيل وجهتك المثلى لعالم الخيول. من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+        <div class="footer-text">
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="inf-footer">
+                <h3>موسوعة الخيول العالمية</h3>
+                <div class="subscribe">
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button>اشترك</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+  
+     <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../store/store.html";
+        }
+    </script>
+     
+</body>
+</html>

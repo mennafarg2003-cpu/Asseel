@@ -1,0 +1,650 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tajawal;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-offwhite: #fdfbf8;
+  --color-vanilla: #f1eada;
+  --color-mountain: #aaa396;
+  --color-sand: #cec1a8;
+  --color-tobacco: #b59e7d;
+  --color-mahogany: #584738;
+   --color-primary:#F9F7F2;
+}
+body {
+  background: var(--back-ground, #FAF9F6) !important;
+}
+
+
+/* NAVBAR */
+
+.main-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+width:100%;
+height:75px;
+
+padding:0 80px;
+margin:auto;
+
+position:sticky;
+top:0;
+z-index:1000;
+
+background:#fff;
+border-radius:0 0 20px 20px;
+
+backdrop-filter:blur(8px);
+}
+
+.main-navbar.scrolled{
+height:70px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+
+/* Logo */
+
+.logo{
+font-size:30px;
+font-weight:600;
+mix-blend-mode:multiply;
+}
+
+.logo img{
+height:75px;
+width:100%;
+}
+
+
+/* Links */
+
+.nav-links{
+display:flex;
+gap:40px;
+
+list-style:none;
+
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
+.nav-links a{
+position:relative;
+
+padding:6px 0;
+
+color:#000;
+text-decoration:none;
+
+font:700 18px/33px 'Tajawal',sans-serif;
+
+letter-spacing:.5px;
+
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#000;
+}
+
+.nav-links a::after{
+content:"";
+
+position:absolute;
+left:0;
+bottom:-5px;
+
+width:0;
+height:2px;
+
+background:#000;
+
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a.active{
+color:#775A19;
+}
+
+
+/* Icons */
+
+.navbar-icons{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.navbar-icons .icon{
+font-size:20px;
+
+color:#000;
+
+cursor:pointer;
+
+transition:.2s;
+}
+
+.navbar-icons .icon:hover{
+transform:scale(1.2);
+}
+
+
+
+
+/*    hero    */
+.hero{
+    position: relative;
+    
+}
+.hero img{
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    padding: 16px;
+}
+.hero .text{
+ position: absolute;
+ bottom:112px;
+ right:112px;
+ color: #fff;
+ text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.hero .text h1{
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+
+
+
+/*   disease card */
+
+.disease .disease-card{
+    background-color: #D4C3BA33;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 95%;
+    color: #584738;
+    margin: 32px auto;
+     transition: transform 0.3s ease;
+      display: flex;
+  flex-direction: column;
+
+}
+.disease .disease-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.disease .disease-card img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;  
+}
+.disease .disease-card h3{
+  padding: 4px;
+}
+.disease .disease-card p{
+text-align: justify;
+padding: 4px;
+}
+
+.disease .disease-card .line {
+    margin-top: auto;
+    padding: 15px 20px;
+    position: relative; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.disease .disease-card .line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.disease .disease-card .line a {
+    text-decoration: none;
+    color: #775A19;
+    font-weight: bold;
+    font-size: 14px;
+    margin:14px 14px 20px 14px;
+}
+
+
+.disease .disease-card a i{
+ width: 9.333px;
+height: 9.333px;
+color: #775A19;
+}
+
+
+
+
+
+
+/*      encyclopedia      */
+.encyclopedia-horse .encyclopedia{
+   border-radius: 20px;
+background: var(--Colors-primary-300, #B59E7D);
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    color: #ffff;
+    margin: 32px auto;
+    max-width: 1000px;
+}
+.encyclopedia-horse .encyclopedia .btn{
+ border-radius: 16px;
+background: var(--Colors-primary-500, #6A573C);
+    color: #ffff;
+    border: none;
+    margin: 8px 0;
+}
+
+
+/*              ears  diseases          */
+
+.ear-hero .ear img{
+width: 80%;
+height: 480px;
+object-fit: cover;
+border-radius: 16px;
+filter: brightness(75%);
+}
+.ear-hero .ear .text{
+bottom: 32px;
+right: 182px;
+color: #fff;
+}
+.ear .text span{
+background: red;
+border-radius: 32px;
+margin: 12px 10px;
+}
+
+/*     information     */
+.leftSide .key{
+border-radius: 16px;
+background: #fff;
+max-width: 350px;
+}
+.leftSide .key .title{
+opacity: 0.7;
+}
+.leftSide .key .one{
+background:  #fff5f5;
+color: #c0392b;
+}
+.leftSide .key .two{
+background:  #fff9f1;
+color: #d35400;
+}
+.leftSide .key .three{
+background:  #f0f9f8;
+color:  #16a085;
+}
+
+.leftSide .expert{
+max-width: 350px;
+border-radius: 16px;
+background: #fff;
+}
+.leftSide .expert .green{
+background:  #deefed;
+color:  #16a085;
+width: 33%;
+border-radius: 8px;
+}
+
+.leftSide .image{
+max-width: 350px;
+border-radius: 16px;
+background: #fff;
+}
+.image p{
+opacity: 0.7;
+}
+.image img{
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+/*    main  data    */
+.data .general{
+max-width: 800px;
+border-radius: 16px;
+background: #fff;
+}
+.data .general h3{
+color: #584738;
+}
+.data .general p{
+text-align: justify;
+}
+
+
+/*     Symptom-cause     */
+.Symptom-cause .symptoms{
+background: #fff;
+border-radius: 16px;
+margin-right: 32px;
+width: 380px;
+}
+.Symptom-cause .causes{
+background: #fff;
+border-radius: 16px;
+width: 380px;
+}
+.Symptom-cause h2{
+color: #584738;
+}
+
+/*   box    */
+.box{
+background: #B59E7D;
+color: white;
+border-radius: 16px;
+width: 800px;
+margin-right: 8px;
+}
+
+.box .left{
+margin-right: 32px;
+max-width: 400px;
+}
+.box p{
+text-align: justify;
+}
+.box h4{
+color: #6A573C;
+}
+.box .btn{
+background: #584738;
+color: #fff;
+width: 95%;
+margin-right: 12px;
+}
+
+
+
+
+/*   footer    */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 16px;
+  margin-top: 32px;
+  background: var(--Colors-Secondary-Alpha-10, rgba(206, 193, 168, 0.10));
+ 
+}
+footer .footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .footer-logo img{
+  width: 150px;
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+footer .footer-logo p{
+  font-size: 14px;
+  text-align: justify;
+  max-width: 350px;
+  margin-left: 25px;
+}
+
+
+footer .footer-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 8px;
+  color: var(--Text-Color, #151411);
+}
+
+footer .footer-text .icon{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  color: #22142E9E;
+}
+footer .inf-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-text h3{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--Text-Color, #151411);
+}
+
+footer .subscribe{
+  display: flex;
+  gap: 10px;
+}
+footer .footer-text input{
+  border-radius: 16px;
+  border: none;
+  background:#ebe7e7;
+  padding:8px;
+  width: 300px;
+}
+footer .footer-text input:focus{
+  outline: none;
+  background: #fff ; 
+  border-color: #775A19E5; 
+  box-shadow: 0 0 5px #775A19E5;
+}
+footer .footer-text button{
+  border-radius: 8px;
+  background: var(--Colors-primary-500, #6A573C);
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* ===== HAMBURGER MENU ===== */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* ===== TABLET: max-width 1024px ===== */
+@media (max-width: 1024px) {
+    .main-navbar {
+        padding: 0 30px;
+    }
+
+    /* تحويل القائمة العادية لقائمة منسدلة عمودية */
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        transform: translateY(-150%);
+        transition: transform 0.4s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        border-radius: 0 0 20px 20px;
+    }
+
+    /* كلاس التفعيل بالجافا سكريبت لفتح القائمة */
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: block; /* إظهار زر الهمبرجر */
+        order: 2;
+    }
+    
+    .navbar-icons {
+        order: 3;
+    }
+
+    /* إصلاح قسم كروت الأمراض (Disease Cards) */
+    .disease .disease-card {
+        width: 100% !important; /* الاعتماد على Bootstrap Grid للتحكم بالتقسيم */
+        margin: 15px auto;
+    }
+
+    /* صفحة تفاصيل مرض الأذن (Ear Diseases) */
+    .info.p-2.m-3.d-flex {
+        flex-direction: column; /* تحويل الهيكل لعمودي بدلاً من أفقي */
+        align-items: center;
+        gap: 30px;
+    }
+
+    .leftSide {
+        margin-right: 0 !important;
+        width: 100%;
+        max-width: 500px;
+    }
+    .leftSide .key, .leftSide .expert, .leftSide .image {
+        max-width: 100%;
+    }
+
+    .data {
+        width: 100%;
+        max-width: 800px;
+    }
+    .data .general {
+        max-width: 100%;
+    }
+
+    /* قسم الأعراض والأسباب */
+    .Symptom-cause {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Symptom-cause .symptoms, .Symptom-cause .causes {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    /* صندوق العلاج والوقاية (Treatment Box) */
+    .box {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    .box .info.d-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box .left {
+        margin-right: 0 !important;
+        max-width: 100%;
+    }
+}
+
+/* ===== MOBILE: max-width 768px ===== */
+@media (max-width: 768px) {
+    .main-navbar {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 55px;
+    }
+
+    /* (Hero Section) */
+    .hero img {
+        height: 450px; 
+    }
+    .hero .text {
+        bottom: 40px;
+        left: 20px;
+    }
+    .hero .text h1 {
+        font-size: 28px;
+    }
+
+    /* هيرو صفحة الأذن */
+    .ear-hero .ear img {
+        width: 100%;
+        height: 300px;
+    }
+    .ear-hero .ear .text {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    /* (Encyclopedia Box) */
+    .encyclopedia-horse .encyclopedia {
+        padding: 30px 15px !important;
+    }
+    .encyclopedia-horse .encyclopedia h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* الفوتر (Footer) */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 30px 15px;
+    }
+    footer .footer-logo, footer .inf-footer {
+        align-items: center;
+    }
+    footer .footer-logo p {
+        margin-left: 0;
+        text-align: center;
+    }
+    footer .subscribe {
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .footer-text input {
+        width: 100%;
+    }
+}

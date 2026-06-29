@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأطباء البيطريون</title>
+   <link
+      rel="stylesheet"
+      href="vets.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map">
+</head>
+<body>
+
+    <main>
+      <!--   nav     -->
+     <nav class="main-navbar">
+          <div class="logo">
+        <img src="../images/logo 31.jpeg" alt="logo">
+    </div>
+
+    <!-- زر الهمبرجر الجديد -->
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+   <div class="navbar-icons">
+    <i class="fas fa-globe icon lang" onclick="changeLanguage()"></i>
+    <i class="fas fa-shopping-cart icon cart"></i>
+   <a href="../sign up/sign.html" target="_blank"> <i class="fas fa-user icon user"></i> </a>
+</div>
+  
+
+    <ul class="nav-links">
+      <li><a href="../index.html">الرئيسية</a></li>
+        <li><a href="../Breeds/Breeds.html" >السلالات</a></li>
+        <li><a href="../articles/articles.html" >المقالات</a></li>
+        <li><a href="../diseases/disease.html" >الأمراض</a></li>
+        <li><a href="../vets/vets.html"  class="active">الأطباء</a></li>
+        <li><a href="../store/store.html" >المتجر</a></li>
+        <li><a href="../auctions/auction.html" >المزادات</a></li>
+        <li><a href="../community/community.html" >المجتمع</a></li>
+        
+    </ul>
+    </nav>
+
+    <!--   hero    -->
+       <section class="hero-vets p-2 m-3">
+        <div class="hero position-relative">
+            <img src="img/Hero.png" alt="">
+
+            <div class="text position-absolute ">
+            <h3 class="fs-2 fw-semibold ">تعرّف على أطبائنا المتخصصين</h3>
+            <p class="fs-5 fw-light">تواصل مع أطباء بيطريين موثوقين ومتخصصين في الخيول لضمان أفضل رعاية لخيلك.</p>
+            </div>
+
+        </div>
+        
+       </section>
+
+       <!--   vets card    -->
+          <section class="our-vets d-flex justify-content-evenly flex-wrap ">
+
+            <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary1_.png" alt="">
+            <span class="country rounded-pill position-absolute ">مصري</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. عبدالله أيمن</h3>
+            <p class=" ms-2 fs-6 fw-medium">خبير في أمراض قلب الخيول، يقدم استشارات متخصصة في الوقاية والعلاج. يستخدم أحدث التقنيات لضمان قلوب سليمة. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="doctor.html" >عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+            <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary.....jpg" alt="">
+            <span class="country rounded-pill position-absolute ">تونسي</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. سمير عادل</h3>
+            <p class=" ms-2 fs-6 fw-medium">خبير في تشخيص وعلاج أمراض الجهاز التنفسي في الخيول، يعمل على تعزيز قدرتها على التحمّل أثناء السباقات. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="" target="_blank">عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+                       <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary3_.png" alt="">
+            <span class="country rounded-pill position-absolute ">مصري</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. علي محمود</h3>
+            <p class=" ms-2 fs-6 fw-medium">طبيبة بيطرية ذات خبرة في طب الخيول الرياضي، تركز على تحسين الأداء والوقاية من الإصابات. تجمع بين المعرفة العلمية والاهتمام الشخصي في علاج المرضى. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="">عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+            <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary.jpg" alt="">
+            <span class="country rounded-pill position-absolute ">صومالي</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. كريم ناصر</h3>
+            <p class=" ms-2 fs-6 fw-medium">طبيب بيطري متخصص في علاج الخيول، بخبرة واسعة في العظام وإعادة التأهيل، مع تركيز خاص على صحة الأداء الرياضي للخيول. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="" >عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+            
+            <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary6.jpg" alt="">
+            <span class="country rounded-pill position-absolute ">مغربي</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. يوسف محمود</h3>
+            <p class=" ms-2 fs-6 fw-medium">طبيب بيطري متخصص في أمراض الجهاز التنفسي للخيول، بخبرة واسعة في علاج الحالات المعقدة. ملتزم بتقديم رعاية شاملة للحيوانات الرياضية. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="">عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+            <div class="card position-relative d-flex flex-column">
+              <img src="img/veterinary8.jpg" alt="">
+            <span class="country rounded-pill position-absolute ">جزائري</span>
+            <h3 class=" mt-3 ms-2 fs-4 fw-semibold">د. هاني محمود</h3>
+            <p class=" ms-2 fs-6 fw-medium">طبيب بيطري متخصص في صحة الخيول الرياضية، بخبرة واسعة في علاج الإصابات وتحسين الأداء. </p>
+               <div class="line">
+                   
+            <a class="text-decoration-none text-black-50 fs-6 fw-bold d-flex align-items-center gap-1"
+             href="">عرض التفاصيل <i class="fa-solid fa-arrow-left "></i></a>
+                 </div>
+            </div>
+
+          </section>
+
+
+     <!--   footer   -->
+         <footer>
+
+        <div class="footer-logo">
+        <img src="../images/logo 3.jpeg" alt="">
+        <p>أصيل وجهتك المثلى لعالم الخيول.
+             من استكشاف السلالات العالمية إلى الرعاية البيطرية المتخصصة
+             والتدريب الاحترافي، نحن مكرّسون لصحة وجمال الخيول.</p>
+        </div>
+
+         <div class="footer-text">
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          
+            <div class="inf-footer">
+              <h3>موسوعة الخيول العالمية</h3>
+
+             <div class="subscribe">
+               <input type="email" placeholder="بريدك الإلكتروني">
+               <button>اشترك</button>
+             </div>
+
+           </div>
+        </div>
+    </footer>
+
+    </main>
+    
+     <script src="../script.js"></script>
+    <script>
+        function changeLanguage(){
+        window.location.href="../../vets/vets.html";
+        }
+    </script>
+</body>
+</html>
