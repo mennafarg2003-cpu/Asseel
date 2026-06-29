@@ -30,7 +30,7 @@
     </div>
 
     <div class="form">
-        <form action="../index.html" class="d-flex flex-column p-2">
+        <form id="loginForm" class="d-flex flex-column p-2">
             <label for="email" class="fs-5 fw-medium my-2 ms-2">Email </label>
             <input type="email" id="email" placeholder="Your email" required>
 
@@ -53,7 +53,7 @@
             <a href=""><img src="instagram.png" alt=""></a>
         </div>
 
-        <p class="fs-6 fw-light mt-2">Don't have an account? <a href="" class="text-decoration-none fs-6 fw-light">Sign Up</a></p>
+        <p class="fs-6 fw-light mt-2">Don't have an account? <a href="#" onclick="goToSignup()" class="text-decoration-none fs-6 fw-light">Sign Up</a></p>
 
       </div>
 
@@ -67,9 +67,19 @@
 
 
 
-   <script src="/script.js"></script>
-    <script src="/js/all.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+   <script src="../script.js"></script>
+   <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // منع إعادة تحميل الصفحة الافتراضي للـ form
+            
+            // حفظ حالة تسجيل الدخول في المتصفح
+            localStorage.setItem("isLoggedIn", "true");
+            
+            // توجيه المستخدم لصفحة الهوم بنجاح
+            window.location.href = "../index.html";
+        });
+    </script>
+
   
 </body>
 </html>

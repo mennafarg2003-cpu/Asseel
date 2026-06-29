@@ -1,3 +1,8 @@
+function goToSignup() {
+  window.location.href = "../Asseel/index.html";
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("mobile-menu");
     const navLinks = document.querySelector(".nav-links");

@@ -282,6 +282,9 @@ Join our community of horse enthusiasts, breeders, and trainers, exploring breed
 
     <script src="script.js"></script>
     <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "sign up/sign.html";
+        }
         function changeLanguage(){
         window.location.href="Asseel arab/index.html";
         }
